@@ -6,10 +6,39 @@ body {
   background-attachment: fixed;
   height: 100%;
   width: 100%;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  color: rgba(0,0,0,0.7);
+  font-family: sans-serif;
+
+}
+
+.red {
+  color : #EC4D4A
+}
+
+.transparent-btn {
+  color : inherit;
+  text-decoration: none;
+}
+
+.button {
+  background-color: white;
+  border: 2px solid #EC4D4A;
+  border-radius: 5px;
+  color : #EC4D4A;
+  padding : 10px;
+  font-size: 13px;
+  transition-duration: 0.4s;
+  width: 75px;
+}
+.button:hover{
+  background-color: #EC4D4A;
+  color : white;
 }
 
 #mainContainer {
@@ -22,7 +51,7 @@ body {
   border-radius: 1px;
   box-shadow: 0px 2px 20px 3px rgba(0,0,0,0.2);
   width: 60%;
-  height: 60%;
+  height: 75%;
 }
 
 .center {
@@ -37,33 +66,42 @@ body {
 }
 
 #leftContainer {
-  background-color: rgba(245,245,245,0.85)
+  background-color: rgba(245,245,245,0.85);
 }
 
 #center-sub-container {
   position: absolute;
   width: 130px;
   height: inherit;
+  font-size: 17px;
   /* padding: 5px; */
 }
 
 #center-sub-container :nth-child(1){
-  background-color: black;
   height: 20%;
 }
+
 #center-sub-container :nth-child(2){
-  background-color: blue;
   height: 40%;
+  /* background-color: red; */
 }
+#center-sub-container :nth-child(2) > div{
+  height: 46%;
+  width: 70%;
+  background-color: white;
+  box-shadow: 0px 2px 40px rgba(0,0,0, 0.1);
+}
+#center-sub-container :nth-child(2) > div > img{
+    height: 100%;
+    width: 100%;
+}
+
 #center-sub-container :nth-child(3){
-  background-color: blue;
   height: 10%;
 }
 #center-sub-container :nth-child(4){
-  background-color: blue;
   height: 10%;
 }
 #center-sub-container :nth-child(5){
-  background-color: red;
   height: 15%;
 }
