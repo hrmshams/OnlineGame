@@ -16,6 +16,9 @@ body {
   font-family: sans-serif;
 
 }
+p{
+  margin: 5px;
+}
 
 .red {
   color : #EC4D4A
@@ -28,16 +31,17 @@ body {
 
 .button {
   background-color: white;
-  border: 2px solid #EC4D4A;
+  border: 1px solid rgba(0,0,0,0.5);
   border-radius: 5px;
-  color : #EC4D4A;
+  color : rgba(0,0,0,0.5);
   padding : 10px;
   font-size: 13px;
   transition-duration: 0.4s;
   width: 75px;
 }
 .button:hover{
-  background-color: #EC4D4A;
+  background-color: orange;
+  border: 1px solid orange;
   color : white;
 }
 
@@ -64,6 +68,29 @@ body {
 .subContainer {
   width: 50%;
 }
+.top-sub-cont {
+  height: 65%;
+  font-size: 30px;
+}
+
+.point {
+  font-size: 55px;
+}
+.bottom-sub-cont {
+  /* background-color: blue; */
+  flex: 1;
+  justify-content: flex-start;
+}
+.bottom-sub-cont > div{
+  width: 100px;
+  height: 75px;
+  background-color: #EC4D4A;
+  font-size: 12px;
+}
+.bottom-sub-cont > div :nth-child(2){
+  color : white;
+  font-size: 23px;
+}
 
 #leftContainer {
   background-color: rgba(245,245,245,0.85);
@@ -86,8 +113,8 @@ body {
   /* background-color: red; */
 }
 #center-sub-container :nth-child(2) > div{
-  height: 46%;
-  width: 70%;
+  height: 90px;
+  width: 90px;
   background-color: white;
   box-shadow: 0px 2px 40px rgba(0,0,0, 0.1);
 }
