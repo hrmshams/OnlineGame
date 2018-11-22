@@ -96,7 +96,7 @@ p{
   font-size: 23px;
 }
 
-#leftContainer {
+.player-turn-subcontainer {
   background-color: rgba(245,245,245,0.85);
 }
 
@@ -109,11 +109,11 @@ p{
 }
 
 #center-sub-container :nth-child(1){
-  height: 20%;
+  height: 12%;
 }
 
 #center-sub-container :nth-child(2){
-  height: 30%;
+  height: 43%;
   /* background-color: red; */
 }
 #center-sub-container :nth-child(2) > div{
@@ -128,10 +128,10 @@ p{
 }
 
 #center-sub-container :nth-child(3){
-  height: 10%;
+  height: 7%;
 }
 #center-sub-container :nth-child(4){
-  height: 10%;
+  height: 8%;
 }
 #center-sub-container :nth-child(5){
   height: 15%;
